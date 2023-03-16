@@ -1,4 +1,4 @@
-<%@ Page Title="" Language="C#" MasterPageFile="~/MP.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="WEBPOLIMEROS.Index" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MP.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="WEBPOLIMEROS.Index" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="title" runat="server">
      Inicio
 </asp:Content>

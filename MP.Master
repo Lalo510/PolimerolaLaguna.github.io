@@ -1,0 +1,299 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MP.master.cs" Inherits="WEBPOLIMEROS.MP" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+
+      
+
+
+
+
+    <title>
+         <asp:ContentPlaceHolder runat="server" ID="title" ></asp:ContentPlaceHolder>
+    </title>
+
+    <style type="text/css" >
+          body{
+               background: url('img/MDF.png') no-repeat center center fixed ;
+               -webkit-background-size: cover;
+               -moz-background-size: cover;
+               -o-background-size: cover;
+               background-size: cover;
+               /*opacity: 0.5;*/
+
+                /*display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                height: 100vh;*/
+            
+          }
+/*
+          img 
+          {
+           opacity: 0.5;
+          }*/
+        </style>
+
+
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+
+</head>
+
+
+<body>
+    <form id="MP" runat="server">
+          <header class="p-3 mb-3 border-bottom">
+               <div class="container">
+                   <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+             <nav class="navbar navbar-default">
+                <%--<div class="container-fluid">--%>               
+                     <%--<div class="navbar-header">--%>
+                    <%--<a class="navbar-brand" href="Index.aspx">
+                        <%--<asp:Image runat="server" Height="53px" src="/img/LOGOMUNDO.png" Width="52px"/>--%>
+                       
+                    <%--</a>--%>
+                         
+                     <%--</div>--%>
+                <%--</div>--%>
+                  
+            </nav>
+                      
+                           <img src="~/img/MUNDO.png" Height="70"  align="left" href="Index.aspx" runat="server"  /> 
+                    
+                       
+
+                       <nav class="navbar navbar-expand-lg navbar-dark">
+  <h3>  <a class="navbar-brand" href="Index.aspx" style="color:blue;">Polimeros la Laguna Sa. de Cv</a> </h3> 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText" >
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <h4> <a style="color:blue;" class="nav-link" href="Index.aspx">Inicio </a> </h4>  
+      </li>
+      <li class="nav-item">
+        <h4>  <a style="color:blue;" class="nav-link" href="Innovacion.aspx">Innovacion</a>   </h4> 
+      </li>
+      <li class="nav-item">
+       <h4>  <a style="color:blue;"  class="nav-link" href="Nosotros.aspx">Nosotros</a> </h4> 
+      </li>
+        <li class="nav-item">
+       <h4> <a style="color:blue;"  class="nav-link" href="Materiales.aspx">Materiales</a>  </h4>  
+      </li>
+          <li class="nav-item">
+       <h4>  <a style="color:blue;"  class="nav-link" href="Bodegas.aspx">Bodegas</a>  </h4> 
+      </li>
+          <li class="nav-item">
+       <h4> <a  style="color:blue;" class="nav-link" href="Contactos.aspx">Contacto</a> </h4>  
+      </li>
+         <%-- <li class="nav-item">
+       <h5>  <a  style="color:blue;"  class="nav-link" href="#">Extras</a>  </h5>   
+      </li>--%>
+         
+
+    </ul>
+     <%--      <form class="d-flex" role="search">
+        <input class="form-control me-1" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-warning" type="submit">Buscar</button>
+      </form>--%>
+    
+  
+  </div>
+</nav>
+                       </div>
+
+                   </div> 
+
+              </header>
+
+        
+        <div>
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <%--<div>--%>
+          <%--  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>--%>
+        <%--</div>--%>
+    </form>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+   
+      <div class="p-3 " >   <a title="WhatsApp" href='https://wa.me/2225699230?text=Hola!%20Estoy%20interesado%20en%20tu%20servicio'> <img src="~/img/WHATSAPP.png" Height="45" runat="server"/>  </a>   </div>           
+
+
+   <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
+    <!-- Left -->
+    <div class="me-8 d-none d-lg-block">
+      <%--<span>Conéctate con nosotros en las redes sociales: </span>--%>
+
+
+        <h6 class="text-uppercase fw-bold mb-4"> Conéctate con nosotros en las redes sociales: </h6>
+
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+ 
+
+      <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #2E70FD" href="" role="button"> <i class="fab fa-facebook-f"></i></a>
+      
+        <!-- WhatsApp -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #64F804" href='https://wa.me/2227148332?text=Hola!%20Estoy%20interesado%20en%20tu%20servicio' role="button"><i class="fab fa-whatsapp"></i></a>
+
+        <!-- Gmail -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="mailto:polimeroslagunasacv@gmail.com" role="button"><i class="fas fa-envelope "></i></a>
+
+      <!-- Google -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="https://goo.gl/maps/NEPGypjDmx7GmMbo8" role="button"><i class="fab fa-google"></i></a>
+
+      <%--<!-- Instagram -->
+      <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+          --%>   
+      
+    </section>
+    <!-- Section: Social media -->
+
+
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+
+            <center>
+          <h6 class="text-uppercase fw-bold mb-4">
+
+            <i class="fas fa-gem me-3"></i>Polimeros la Laguna SA.DE.C.V </h6>
+
+            </center>
+
+            <center>
+            <h4>Acerca de nosotros </h4>
+          <p>
+             Somos una de las mas grandes proveedoras de plástico, a nivel nacional, por lo que constantemente nos mantenemos en un gran amplio crecimiento en el mercado.
+          </p>
+            </center>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            MENU
+          </h6>
+          <p>
+            <a href="Index.aspx" class="text-reset">INICIO</a>
+          </p>
+          <p>
+            <a href="Innovacion.aspx" class="text-reset">INNOVACION </a>
+          </p>
+          <p>
+            <a href="Nosotros.aspx" class="text-reset">NOSOTROS</a>
+          </p>
+          <p>
+            <a href="Materiales.aspx" class="text-reset">MATERIALES</a>
+          </p>
+             <p>
+            <a href="Contactos.aspx" class="text-reset">CONTACTO</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            VISITA NUESTROS SITIOS
+          </h6>
+          <p>
+            <a href="https://www.google.com/?hl=es" class="text-reset" >FACEBOOK</a>
+          </p>
+          <p>
+            <a href="https://goo.gl/maps/NEPGypjDmx7GmMbo8" class="text-reset">GOOGLE MAPS</a>
+          </p>
+          <p>
+            <a href='https://wa.me/2225699230?text=Hola!%20Estoy%20interesado%20en%20tu%20servicio' class="text-reset">WHATSAPP</a>
+          </p>
+          <p>
+            <a href="mailto:polimeroslagunasacv@gmail.com" class="text-reset">GMAIL</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+          <p><i class="fas fa-home me-3"></i>  División del Norte #28, San Francisco Ocotlán, 72680 Puebla, Pue.</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            Polimeroslagunasacv@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> +52 (222) 569-9230 </p>
+          <p><i class="fas fa-phone me-3"></i> +52 (222) 569-3490 </p>
+          <p><i class="fas fa-phone me-3"></i> +52 (222) 606-8450 </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgb(133, 146, 158);">
+    © 2023 Copyright Polimeros la Laguna:
+    <a class="text-reset fw-bold" href='https://wa.me/2227148332?text=Hola!%20Estoy%20interesado%20en%20tu%20servicio' >JERS.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+</body>
+</html>
